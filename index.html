@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vanilla Boilerplate</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NFT Minter</a>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--  <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </div>
+          -->
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+
+        <div class="container">
+            <div class="row">
+                <div id="app" class="col-md-6 offset-md-3 mint-box">
+                    <div id="success_message">
+
+                    </div>
+                    <div class="form_element">
+                        <input class="form-control" type="text" id="input_name" name="name" placeholder="NFT name">
+                    </div>
+                    <div class="form_element">
+                        <input class="form-control" type="text" id="input_description" name="description"
+                            placeholder="Description">
+                    </div>
+                    <div class="form_element">
+                        <input class="form-control" type="file" id="input_image" name="image"
+                            accept="image/png, image/jpeg">
+                    </div>
+                    <div class="form_element">
+                        <button class="btn btn-primary btn-lg btn-block mint-btn" id="submit_button">Mint</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+</body>
+
+</html>
